@@ -1,7 +1,9 @@
-use serde::Deserialize;
+use serde::{Serialize,Deserialize};
 use std::error::Error;
 use super::connect::DatabaseConnector;
-#[derive(Debug, Deserialize)]
+
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct Airport{
     pub country_code: String,
     pub region_name	: String,

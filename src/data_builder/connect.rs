@@ -60,5 +60,4 @@ impl DatabaseConnector{
         where $1 = $2", &[&column, &val])
         .await.unwrap();
     }
-
     }
